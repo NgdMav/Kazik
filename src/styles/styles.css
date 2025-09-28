@@ -142,6 +142,31 @@ body {
   cursor: pointer;
 }
 
+/* Right info panel */
+.info-panel {
+  flex: 0 0 280px;
+  width: 280px;
+  min-width: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-card {
+  background: #3a0066;
+  border: 1px solid #5a0099;
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: gold;
+}
+
+
 /* ========================
    DEBUG / VISUALIZATION (uncomment to use)
    ======================== */
