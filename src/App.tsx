@@ -27,14 +27,14 @@ export default function LuckySim() {
   const [showProfile, setShowProfile] = useState(false);
 
   const games: Game[] = [
-    { id: 1, name: "🎰 Slots", desc: "Spin the reels and chase big wins!", icon: <Coins /> },
-    { id: 2, name: "🎲 Roulette", desc: "Place your bets and spin the wheel of fortune.", icon: <Dice5 /> },
-    { id: 3, name: "🃏 Blackjack", desc: "Beat the dealer and aim for 21.", icon: <Trophy /> },
-    { id: 4, name: "🎡 Wheel of Fortune", desc: "Spin the colorful prize wheel.", icon: <Gamepad2 /> },
-    { id: 5, name: "🂡 Poker", desc: "Bluff, bet, and win big with poker hands.", icon: <Diamond /> },
-    { id: 6, name: "🚀 Rocket", desc: "Watch the rocket grow and cash out in time!", icon: <Rocket /> },
-    { id: 7, name: "🎲 Dice", desc: "Roll the dice and test your luck.", icon: <Target /> },
-    { id: 8, name: "🎮 Esports", desc: "Bet on your favorite esports teams.", icon: <Monitor /> },
+    { id: 1, name: "Slots", desc: "Spin the reels and chase big wins!", icon: <Coins /> },
+    { id: 2, name: "Roulette", desc: "Place your bets and spin the wheel of fortune.", icon: <Dice5 /> },
+    { id: 3, name: "Blackjack", desc: "Beat the dealer and aim for 21.", icon: <Trophy /> },
+    { id: 4, name: "Wheel of Fortune", desc: "Spin the colorful prize wheel.", icon: <Gamepad2 /> },
+    { id: 5, name: "Poker", desc: "Bluff, bet, and win big with poker hands.", icon: <Diamond /> },
+    { id: 6, name: "Rocket", desc: "Watch the rocket grow and cash out in time!", icon: <Rocket /> },
+    { id: 7, name: "Dice", desc: "Roll the dice and test your luck.", icon: <Target /> },
+    { id: 8, name: "Esports", desc: "Bet on your favorite esports teams.", icon: <Monitor /> },
   ];
 
   return (
@@ -75,8 +75,12 @@ export default function LuckySim() {
             <p>Come back every day for free coins.</p>
           </div>
           <div className="ad-card">
-            <h3>🔥 Hot Games</h3>
-            <p>Slots, Roulette, and Rocket trending now!</p>
+            <h3>Parents’ Panel</h3>
+            <p>Parents can set rewards for good grades.</p>
+          </div>
+          <div className="ad-card">
+            <h3>Study Motivation</h3>
+            <p>Better grades unlock bigger bonuses!</p>
           </div>
         </aside>
 
@@ -85,8 +89,8 @@ export default function LuckySim() {
           {/* Hero */}
           {!selectedGame && !showProfile && (
             <div className="hero">
-              <h2>Welcome to LuckySim 🎉</h2>
-              <p>Enjoy a casino-like experience without real money risk.</p>
+              <h2>Welcome to LuckySim</h2>
+              <p>Now it’s not only about games — track your grades and earn rewards from parents!</p>
             </div>
           )}
 
@@ -118,20 +122,33 @@ export default function LuckySim() {
           {/* Profile */}
           {showProfile && (
             <div className="profile">
-              <h2>👤 Player Profile</h2>
+              <h2>Student Profile</h2>
               <p>Username: <b>Guest123</b></p>
               <p>Level: <b>5</b></p>
               <p>Coins: <b>2500</b></p>
 
-              <h3>🏆 Achievements:</h3>
+              <h3>Latest Grades:</h3>
               <ul>
-                <li>🎰 First spin in Slots</li>
-                <li>🎲 10 rounds of Roulette</li>
-                <li>🃏 Beat the dealer in Blackjack</li>
+                <li>Math: A</li>
+                <li>English: B+</li>
+                <li>Science: A-</li>
+              </ul>
+
+              <h3>Achievements:</h3>
+              <ul>
+                <li>First spin in Slots</li>
+                <li>10 rounds of Roulette</li>
+                <li>Beat the dealer in Blackjack</li>
+              </ul>
+
+              <h3>Rewards Earned:</h3>
+              <ul>
+                <li>$5 pocket money for 5 A grades</li>
+                <li>Extra game time this weekend</li>
               </ul>
 
               <button className="btn" onClick={() => setShowProfile(false)}>
-                🔙 Back to Home
+                Back to Home
               </button>
             </div>
           )}
@@ -140,20 +157,20 @@ export default function LuckySim() {
         {/* Right Info Panel */}
         <aside className="info-panel">
           <div className="info-card">
-            <h3>🏅 Top Players</h3>
+            <h3>Top Students of the Week</h3>
             <ul>
-              <li>PlayerX - 50,000 coins</li>
-              <li>LuckyQueen - 42,300 coins</li>
-              <li>SpinMaster - 38,750 coins</li>
+              <li>Anna – 5 A’s</li>
+              <li>Mark – 3 A’s</li>
+              <li>Alex – 2 A’s</li>
             </ul>
           </div>
           <div className="info-card">
-            <h3>📰 News & Updates</h3>
-            <p>🚀 New Rocket game added!</p>
-            <p>🎮 Esports betting now available.</p>
+            <h3>News & Updates</h3>
+            <p>New Rocket game added!</p>
+            <p>Esports betting now available.</p>
           </div>
           <div className="info-card">
-            <h3>👥 Active Users</h3>
+            <h3>Active Users</h3>
             <p>Currently online: <b>124</b></p>
           </div>
         </aside>
